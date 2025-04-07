@@ -1,5 +1,4 @@
 import { Request, Response } from "express";
-import { todo } from "node:test";
 
 const todos = [
   { id: 1, text: "Buy Milk", completedAt: new Date() },

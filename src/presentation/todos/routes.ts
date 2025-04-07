@@ -7,10 +7,10 @@ export class TodoRoutes {
     const todoCrontroler = new TodosCrontroler();
 
     router.get("/", todoCrontroler.getTodos); // es lo mismo que poner router.get("/", (req, res) => todoCrontroler.getTodos(req,res))
-    router.get("/:id", todoCrontroler.getTodoById);
-    router.post("/", todoCrontroler.createTodo);
-    router.put("/:id", todoCrontroler.updateTodo);
-    router.delete("/:id", todoCrontroler.deleteById);
+    //router.get("/:id", todoCrontroler.getTodoById);
+    //router.post("/", todoCrontroler.createTodo);
+    //router.put("/:id", todoCrontroler.updateTodo);
+    //router.delete("/:id", todoCrontroler.deleteById);
 
     return router;
   }
