@@ -22,6 +22,10 @@ export class Server {
 
   async start() {
     //* Middlewares (Funciones que se ejecutan en todo momento que se pase por una ruta)
+    //Si mi peticion tiene un body en formato JSON con este Middlewares lo pudo ver
+    this.app.use(express.json());
+    //El siguiente Middlewares sirve para cuando se manda la informacion en x-www-form-urlencoded
+    this.app.use(express.urlencoded({ extended: true }));
 
     //* Public folder
     this.app.use(express.static(this.publicPath));
